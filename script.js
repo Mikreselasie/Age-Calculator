@@ -53,9 +53,21 @@ document.getElementById('form').addEventListener('submit', (event) => {
 const output = document.querySelector(".answer");
 
 output.innerHTML = `
-  <h2>Years: <span id="years">0</span></h2>
-  <h2>Months: <span id="months">0</span></h2>
-  <h2>Days: <span id="days">0</span></h2>
+  <div class="age_box">
+  <h1 id="years" class="number">0</h1>
+  <h2>Years</h2>
+</div>
+
+<div class="age_box">
+  <h1 id="months" class="number">0</h1>
+  <h2>Months</h2>
+</div>
+
+<div class="age_box">
+  <h1 id="days" class="number">0</h1>
+  <h2>Days</h2>
+</div>
+
 `;
 
 animateCount(document.getElementById("years"), years);
